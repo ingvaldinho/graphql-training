@@ -1,4 +1,4 @@
-export const users = [
+const users = [
     {
         id: "1",
     name: "Orbeck",
@@ -18,7 +18,7 @@ export const users = [
     }
 ];
 
-export const posts = [
+const posts = [
     {
         id: '10',
         title: 'GraphQl',
@@ -43,7 +43,7 @@ export const posts = [
 
 ]
 
-export const comments = [
+const comments = [
     {
         id: '20',
         text: ' Great training, thanks to Andrew',
@@ -71,3 +71,11 @@ export const comments = [
         
     }
 ]
+
+const db = {
+    users,
+    posts,
+    comments
+}
+
+export {db as default};
